@@ -7,7 +7,7 @@ import './index.css';
 import HelloWorld from './HelloWorld'
 
 ReactDOM.render(
-		<HelloWorld />,
+		<HelloWorld txt = 'Hello World From Component React.js' />,
 		document.getElementById("root")
 	)
 
