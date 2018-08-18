@@ -1,6 +1,16 @@
 import React, { Component } from 'react'
+import StateInput from './StateInput'
 
 class HelloWorld extends Component {
+
+constructor(props){
+	super(props)
+
+	this.state = {
+		name: 'Allan Cruz'
+	}
+}
+
 	render() {
 		const result = 4
 		const style = {
@@ -11,8 +21,10 @@ class HelloWorld extends Component {
 		return (
 			<div className="my-class-from-react">
 				{/* This is my first componet */}
+				<StateInput />
 				<h1 style={style}>Hello World React</h1>
 				<h4>{ result === 2 * 2 ? <div><ul><li>TRUE</li></ul></div> : <div><ul><li>FALSE</li></ul></div>}</h4>
+				<span>{this.state.name}</span>
 			</div>
 		)
 	}
